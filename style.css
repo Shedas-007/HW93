@@ -1,0 +1,95 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.chat-bubble {
+    position: relative;
+    margin: 50px 200px;
+    width: 300px;
+    padding: 10px;
+    border-radius: 8px;
+    background: rgb(0, 66, 0);
+    transition-duration: 0.5s;
+}
+
+.chat-bubble:hover {
+    transform:translateX(30px);
+}
+
+.chat-bubble:before {
+    content: '';
+    position: absolute;
+    left: -50px;
+    top: 50%;
+    width: 0px;
+    height: 0px;
+    border: 25px solid rgb(0, 66, 0);
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    transform: scaleY(0.7);
+}
+
+.chat-bubble:after {
+    content: '';
+    position: absolute;
+    left: -150px;
+    top: 50px;
+    width: 100px;
+    height: 100px;
+    background-image: url("https://g2.dcdn.lt/images/pix/file238988_cicinas.JPG");
+    background-size:cover;
+    border-radius: 50%;
+}
+
+
+.chat-bubble p {
+    font-size: 16px;
+    color: #fff;
+}
+
+
+.chat-bubble2 {
+    position: relative;
+    margin: 50px 50px;
+    width: 300px;
+    padding: 15px;
+    border-radius: 8px;
+    background: rgb(0, 153, 255);
+    transition-duration: 0.5s;
+}
+
+.chat-bubble2:hover {
+    transform:translateX(-30px);
+}
+
+.chat-bubble2:before {
+    content: '';
+    position: absolute;
+    right: -50px;
+    bottom: 50px;
+    width: 0px;
+    height: 0px;
+    border: 25px solid rgb(0, 153, 255);
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    transform: scaleY(0.7);
+}
+
+.chat-bubble2:after {
+    content: '';
+    position: absolute;
+    right: -150px;
+    bottom: 20px;
+    width: 100px;
+    height: 100px;
+    background-image: url("https://avatarfiles.alphacoders.com/250/thumb-250463.jpg");
+    background-size:cover;
+    border-radius: 50%;
+}
+
+.chat-bubble2 p {
+    font-size: 16px;
+    color: #fff;
+}
